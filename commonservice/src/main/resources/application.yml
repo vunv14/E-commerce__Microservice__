@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: common-service
+
+server:
+  port: 8087
+
+common:
+  kafka:
+    bootstrap-servers: localhost:9092
+    key: org.apache.kafka.common.serialization.StringSerializer
+    value: org.apache.kafka.common.serialization.StringSerializer
+    acks: all
+    retries: 3
+    batch-size: 16384
+    buffer-memory: 33554432
+    compression-type: gzip
+
+    group-id: my-consumer-group
+    auto-offset-reset: earliest
+    enable-auto-commit: true
+
+
