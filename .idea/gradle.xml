@@ -4,14 +4,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Icetea/BE" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/Icetea/BE" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/commonservice" />
         <option name="modules">
           <set>
@@ -48,6 +40,26 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/notificationservice" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/commonservice" name="commonservice">
+                <projects>
+                  <project path="$PROJECT_DIR$/commonservice" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/user-service/user-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/commonservice" />
+            <option value="$PROJECT_DIR$/user-service/user-service" />
           </set>
         </option>
       </GradleProjectSettings>

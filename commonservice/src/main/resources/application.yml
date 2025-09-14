@@ -3,7 +3,7 @@ spring:
     name: common-service
 
 server:
-  port: 8087
+  port: 8088
 
 common:
   kafka:
