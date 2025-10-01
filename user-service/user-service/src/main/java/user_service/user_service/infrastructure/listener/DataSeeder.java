@@ -11,6 +11,10 @@ import user_service.user_service.repository.UserRepository;
 @Configuration
 public class DataSeeder {
 
+    /**
+     *
+     * @return
+     */
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new Argon2PasswordEncoder(16,   // saltLength

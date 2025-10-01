@@ -5,28 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b01939b6-207f-4ea2-bc1c-a31493340ba1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/user-service.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/common/enums/EntityStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/entities/base/AuditEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/entities/base/IsIdentified.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/entities/base/PrimaryEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/listener/AuditEntityListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/listener/PrimaryEntityListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/infrastructure/listener/DataSeeder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/BE.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/security/config/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/security/dto/response/AuthenticationResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Icetea" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/commonservice/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/commonservice/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificationservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/notificationservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/common/enums/EntityStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/common/enums/EntityStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/exception/advice/ExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/exception/advice/ExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/exception/model/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/exception/model/ErrorMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/user-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/infrastructure/listener/DataSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/infrastructure/listener/DataSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/security/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,8 +72,9 @@
       <list>
         <option value="package-info" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -157,7 +145,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/microservice/commonservice/src/main/java/com/example/commonservice/entities&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ITS/EXO/explorer-api&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -429,7 +417,16 @@
       <workItem from="1757339433173" duration="1194000" />
       <workItem from="1757834497731" duration="3973000" />
       <workItem from="1757838545870" duration="248000" />
-      <workItem from="1757838834575" duration="1870000" />
+      <workItem from="1757838834575" duration="3838000" />
+      <workItem from="1757861729736" duration="1269000" />
+      <workItem from="1757863041706" duration="468000" />
+      <workItem from="1757863537261" duration="299000" />
+      <workItem from="1757863868165" duration="431000" />
+      <workItem from="1758203851877" duration="313000" />
+      <workItem from="1758962847797" duration="4372000" />
+      <workItem from="1759038665938" duration="3215000" />
+      <workItem from="1759115953512" duration="379000" />
+      <workItem from="1759324260672" duration="1390000" />
     </task>
     <servers />
   </component>
