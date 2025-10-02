@@ -2,9 +2,7 @@ package user_service.user_service.entities;
 
 
 import com.example.commonservice.entities.base.PrimaryEntity;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -36,5 +34,9 @@ public class User extends PrimaryEntity {
     private LocalDate dateOfBirth;
 
     private String avatarUrl;
+
+    @Column(name = "role", nullable = false)
+    @Enumerated(EnumType.STRING)
+    private Role role;
 
 }
