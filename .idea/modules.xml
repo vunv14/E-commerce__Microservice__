@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/E-commerce__Microservice__.iml" filepath="$PROJECT_DIR$/.idea/E-commerce__Microservice__.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/commonservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/commonservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notificationservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/notificationservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user-service.main.iml" />
     </modules>
   </component>
 </project>

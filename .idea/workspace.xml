@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b01939b6-207f-4ea2-bc1c-a31493340ba1" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/security/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
@@ -16,6 +17,17 @@
       <change beforePath="$PROJECT_DIR$/notificationservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/notificationservice/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/user-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/infrastructure/listener/DataSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/infrastructure/listener/DataSeeder.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/security/config/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/security/dto/response/AuthenticationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/common/enums/EntityStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/common/enums/EntityStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/exception/advice/ExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/exception/advice/ExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/exception/model/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/exception/model/ErrorMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/user-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/infrastructure/listener/DataSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/infrastructure/listener/DataSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/security/config/SecurityConfig.java" afterDir="false" />
+>>>>>>> cc19457e51ab69ae1d03ea549636f4fc0e4a8b61
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +87,10 @@
         <option value="package-info" />
         <option value="Enum" />
         <option value="Interface" />
+<<<<<<< HEAD
+=======
+        <option value="Kotlin Class" />
+>>>>>>> cc19457e51ab69ae1d03ea549636f4fc0e4a8b61
         <option value="Class" />
       </list>
     </option>
@@ -149,7 +165,11 @@
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+<<<<<<< HEAD
     &quot;last_opened_file_path&quot;: &quot;D:/JAVA/E-commerce__Microservice__&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;D:/ITS/EXO/explorer-api&quot;,
+>>>>>>> cc19457e51ab69ae1d03ea549636f4fc0e4a8b61
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -423,12 +443,25 @@
       <workItem from="1757339433173" duration="1194000" />
       <workItem from="1757834497731" duration="3973000" />
       <workItem from="1757838545870" duration="248000" />
+<<<<<<< HEAD
       <workItem from="1757838834575" duration="1870000" />
       <workItem from="1758870494737" duration="6000" />
       <workItem from="1758870516628" duration="9714000" />
       <workItem from="1759371136819" duration="385000" />
       <workItem from="1759371657365" duration="10000" />
       <workItem from="1759387298192" duration="10000" />
+=======
+      <workItem from="1757838834575" duration="3838000" />
+      <workItem from="1757861729736" duration="1269000" />
+      <workItem from="1757863041706" duration="468000" />
+      <workItem from="1757863537261" duration="299000" />
+      <workItem from="1757863868165" duration="431000" />
+      <workItem from="1758203851877" duration="313000" />
+      <workItem from="1758962847797" duration="4372000" />
+      <workItem from="1759038665938" duration="3215000" />
+      <workItem from="1759115953512" duration="379000" />
+      <workItem from="1759324260672" duration="1390000" />
+>>>>>>> cc19457e51ab69ae1d03ea549636f4fc0e4a8b61
     </task>
     <servers />
   </component>
