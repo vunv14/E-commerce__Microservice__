@@ -5,28 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b01939b6-207f-4ea2-bc1c-a31493340ba1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/user-service.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/common/enums/EntityStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/entities/base/AuditEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/entities/base/IsIdentified.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/entities/base/PrimaryEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/listener/AuditEntityListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonservice/src/main/java/com/example/commonservice/listener/PrimaryEntityListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/infrastructure/listener/DataSeeder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/security/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/BE.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Icetea" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/commonservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/commonservice/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/commonservice/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eukeraserice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eukeraserice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notificationservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/notificationservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/user-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/infrastructure/listener/DataSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/user-service/src/main/java/user_service/user_service/infrastructure/listener/DataSeeder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,8 +74,8 @@
       <list>
         <option value="package-info" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -146,6 +135,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ToggleCodyToolWindowAfterMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.BeApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.CommonserviceApplication.executor&quot;: &quot;Run&quot;,
@@ -154,10 +144,12 @@
     &quot;Spring Boot.GatewayServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.NotificationserviceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/microservice/commonservice/src/main/java/com/example/commonservice/entities&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/E-commerce__Microservice__&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -168,7 +160,8 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -393,7 +386,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.27812.49" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.27812.49" />
       </set>
     </attachedChunks>
   </component>
@@ -430,10 +424,19 @@
       <workItem from="1757834497731" duration="3973000" />
       <workItem from="1757838545870" duration="248000" />
       <workItem from="1757838834575" duration="1870000" />
+      <workItem from="1758870494737" duration="6000" />
+      <workItem from="1758870516628" duration="9714000" />
+      <workItem from="1759371136819" duration="385000" />
+      <workItem from="1759371657365" duration="10000" />
+      <workItem from="1759387298192" duration="10000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
