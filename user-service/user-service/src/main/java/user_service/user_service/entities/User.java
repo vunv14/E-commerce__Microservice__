@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 @AllArgsConstructor
@@ -16,7 +17,7 @@ import java.time.LocalDate;
 @Setter
 @Table(name = "users")
 @Entity
-public class User extends PrimaryEntity {
+public class User extends PrimaryEntity implements Serializable {
 
     @Column(nullable = false)
     private String username;
@@ -34,9 +35,5 @@ public class User extends PrimaryEntity {
     private LocalDate dateOfBirth;
 
     private String avatarUrl;
-
-    @Column(name = "role", nullable = false)
-    @Enumerated(EnumType.STRING)
-    private Role role;
 
 }

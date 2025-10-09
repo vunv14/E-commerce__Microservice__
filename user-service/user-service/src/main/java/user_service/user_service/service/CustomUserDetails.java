@@ -1,12 +1,12 @@
-package user_service.user_service.service.impl;
+package user_service.user_service.service;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import user_service.user_service.entities.User;
 import user_service.user_service.repository.UserRepository;
 
 import java.util.Collection;
@@ -15,32 +15,39 @@ import java.util.List;
 /**
  * Created by vunv on 10/2/2025
  */
-@RequiredArgsConstructor
 @Service
-public class CustomUserDetails implements UserDetailsService, UserDetails {
+@RequiredArgsConstructor
+@Slf4j
+public class CustomUserDetails implements  UserDetails {
 
-    private final UserRepository userRepository;
+    String username;
 
-    @Override
-    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        User user = userRepository.findByEmail(email)
-        orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + email));
+    String password;
 
+    String email;
+
+    Collection<? extends GrantedAuthority> authorities;
+
+    public CustomUserDetails(String username, String password, String email, Collection<? extends GrantedAuthority> authorities) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.authorities = authorities;
     }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of();
+        return authorities;
     }
 
     @Override
     public String getPassword() {
-        return "";
+        return password;
     }
 
     @Override
     public String getUsername() {
-        return "";
+        return username;
     }
 
     @Override
