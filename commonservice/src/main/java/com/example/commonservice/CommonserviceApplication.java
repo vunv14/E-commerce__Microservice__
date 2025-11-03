@@ -1,6 +1,6 @@
 package com.example.commonservice;
 
-import com.example.commonservice.configKafka.KafkaProperties;
+import com.example.commonservice.configuration.configKafka.KafkaProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

@@ -3,11 +3,20 @@ package user_service.user_service.security.config;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import user_service.user_service.security.jwt.JwtAuthenticationFilter;
 import user_service.user_service.security.service.CustomAuthenticationProvider;
 
 @Configuration
@@ -19,37 +28,35 @@ public class SecurityConfig {
 
     private final CustomAuthenticationProvider authenticationProvider;
 
+    private final JwtAuthenticationFilter jwtAuthenticationFilter;
+
+    private final UserDetailsService userDetailsService;
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable);
         http.authorizeHttpRequests(req -> req.requestMatchers(WHITE_LIST_URL).permitAll() // cho phép tất cả mọi người truy cập các đường dẫn trong WHITE_LIST_URL
-                .requestMatchers("/api/v1/admin/**").hasRole() // chỉ cho phép người dùng có vai trò ADMIN truy cập các đường dẫn admin
+                .requestMatchers("/api/auth/**", "/api/auth/login", "/api/auth/refresh")
+                .permitAll()
                 .anyRequest().authenticated()    // các đường dẫn còn lại ko được phép truy cập
         );
 
         http.sessionManagement(session ->
                 session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)); // không sử dụng session để lưu trữ thông tin người dùng
+
         http.authenticationProvider(authenticationProvider); // cấu hình AuthenticationProvider
 
+        // Thêm JWT filter trước UsernamePasswordAuthenticationFilter
+        http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
 
-
     /**
-     *
-     * @return
+     * AuthenticationManager để xử lý xác thực
+     * Dùng cho việc login thủ công trong Controller
      */
-
-    /**
-     * Xử lý xác thực người dùng dựa trên UserDetailsService và PasswordEncoder được cấu hình trong ứng dụng.
-     * Xử lý xác thực người dùng (authentication) dựa trên thông tin đăng nhập mà client gửi lên (như username/password, token, v.v).
-     * Nó kiểm tra xem thông tin đăng nhập có hợp lệ không và nếu hợp lệ, nó sẽ tạo ra một đối tượng Authentication đại diện cho người dùng đã xác thực.
-     *
-     * @return
-     */
-//    @Bean
-//    public AuthenticationProvider authenticationProvider() {
-//
-//    }
-
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
+        return config.getAuthenticationManager();
+    }
 }

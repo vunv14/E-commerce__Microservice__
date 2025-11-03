@@ -2,6 +2,7 @@ package com.example.commonservice.exception.advice;
 
 
 import com.example.commonservice.exception.model.ErrorMessage;
+import org.apache.coyote.BadRequestException;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
@@ -10,8 +11,9 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.client.HttpClientErrorException;
 
-import java.util.Date;
+import java.nio.file.AccessDeniedException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,6 +36,24 @@ public class ExceptionAdvice {
     @ExceptionHandler(org.springframework.web.servlet.NoHandlerFoundException.class)
     public ResponseEntity<ErrorMessage> handleNotFound(Exception e) {
         return new ResponseEntity<>(new ErrorMessage("404", "Resource  not found", HttpStatus.NOT_FOUND), HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(BadRequestException.class)
+    public ResponseEntity<ErrorMessage> handleBadRequest(Exception e) {
+        return new ResponseEntity<>(new ErrorMessage("400", e.getMessage(), HttpStatus.BAD_REQUEST), HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(HttpClientErrorException.Forbidden.class)
+    public ResponseEntity<ErrorMessage> handleForbidden(Exception e) {
+        return new ResponseEntity<>(new ErrorMessage("403", e.getMessage(), HttpStatus.FORBIDDEN), HttpStatus.FORBIDDEN);
+    }
+
+    @ExceptionHandler(AccessDeniedException.class)
+    public ResponseEntity<Map<String, String>> handleAccessDeniedException(AccessDeniedException ex) {
+        Map<String, String> error = new HashMap<>();
+        error.put("error", "Bạn không có quyền truy cập vào tài nguyên này!");
+        error.put("details", ex.getMessage());
+        return new ResponseEntity<>(error, HttpStatus.FORBIDDEN); // 403
     }
 
 

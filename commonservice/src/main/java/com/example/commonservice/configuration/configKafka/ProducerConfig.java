@@ -1,4 +1,4 @@
-package com.example.commonservice.configKafka;
+package com.example.commonservice.configuration.configKafka;
 
 
 import lombok.AllArgsConstructor;

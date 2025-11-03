@@ -1,4 +1,4 @@
-package com.example.commonservice.configKafka.model;
+package com.example.commonservice.configuration.configKafka.model;
 
 import lombok.Getter;
 import lombok.Setter;

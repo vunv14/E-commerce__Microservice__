@@ -49,7 +49,6 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
                 log.warn("Invalid password for user: {}", username);
                 throw new BadCredentialsException("Invalid credentials");
             }
-
             return new UsernamePasswordAuthenticationToken(userDetails, password, userDetails.getAuthorities());
         } catch (UsernameNotFoundException e) {
             log.warn("User not found: {}", username);
