@@ -2,15 +2,19 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: your_email@gmail.com
-    password: your_app_password
+    username: nguyenvanvu14022005@gmail.com
+    password: nfsc jhjf urlp fatl
     properties:
       mail:
         smtp:
           auth: true
           starttls:
             enable: true
-
+          ssl:
+            trust: smtp.gmail.com
+        transport:
+          protocol: smtp
+        debug: true
   application:
     name: common-service
   data:

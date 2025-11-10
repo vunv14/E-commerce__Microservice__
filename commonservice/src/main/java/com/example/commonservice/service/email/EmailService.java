@@ -5,6 +5,6 @@ package com.example.commonservice.service.email;
  */
 public interface EmailService {
 
-    void sendEmail(String from , String to , String subject , String body);
+    void sendEmail( String to , String subject , String body);
 
 }
